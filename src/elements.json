@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Element 1",
+    "image": "images/element-1.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Element 2",
+    "image": "images/element-2.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Element 3",
+    "image": "images/element-3.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Element 4",
+    "image": "images/element-4.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Element 5",
+    "image": "images/element-5.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Element 6",
+    "image": "images/element-6.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Element 7",
+    "image": "images/element-7.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Element 8",
+    "image": "images/element-8.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Element 9",
+    "image": "images/element-9.png",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Element 10",
+    "image": "images/element-010.png",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Element 11",
+    "image": "images/element-011.png",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Element 12",
+    "image": "images/element-012.png",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Element 13",
+    "image": "images/element-013.png",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "name": "Element 14",
+    "image": "images/element-014.png",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "name": "Element 15",
+    "image": "images/element-015.png",
+    "clicked": false
+  },
+  {
+    "id": 16,
+    "name": "Element 16",
+    "image": "images/element-016.png",
+    "clicked": false
+  }
+]
