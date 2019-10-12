@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import ElementCard from "./components/ElementCard";
 import Wrapper from "./components/Wrapper";
 import elements from "./elements.json";
-import "./App.css";
-import Score from "./components/Score";
+import ScoreAndTitle from "./components/ScoreAndTitle";
+import CardWrapper from "./components/CardWrapper";
 
 function shuffle(array) {
   let currentIndex = array.length,
@@ -41,10 +41,10 @@ class App extends Component {
     let index = this.state.elements.indexOf(findElement);
     console.log(index);
 
-    // make a shallow copy of the current state, prevents directly mutating state
+    // make a shallow copy of the current state, prevents directly mutating state. Using spread ... here to reach the nested objects
     let elements = [...this.state.elements];
 
-    //  make a shallow copy of the item in teh array that you want to mutate and then change the property in that array, using spread ... here
+    //  make a shallow copy of the item in the array that you want to mutate and then change the property in that array, using spread ... here to modify nested state object
     let element = {
       ...elements[index],
       clicked: boolean
@@ -98,23 +98,23 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <h1 className="title">I CHING MEMORY GAME</h1>
-        <Score
+        <ScoreAndTitle
           key={this.state.score}
           score={this.state.score}
           highScore={this.state.highScore}
         />
-
-        {this.state.elements.map(element => (
-          <ElementCard
-            name={element.name}
-            image={element.image}
-            id={element.id}
-            key={element.id}
-            clicked={element.clicked}
-            handleClick={this.handleClick}
-          />
-        ))}
+        <CardWrapper>
+          {this.state.elements.map(element => (
+            <ElementCard
+              name={element.name}
+              image={element.image}
+              id={element.id}
+              key={element.id}
+              clicked={element.clicked}
+              handleClick={this.handleClick}
+            />
+          ))}
+        </CardWrapper>
       </Wrapper>
     );
   }
